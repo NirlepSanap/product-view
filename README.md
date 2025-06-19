@@ -73,11 +73,6 @@ Runs on: [http://localhost:8000/docs](http://localhost:8000/docs) (Swagger UI)
 
 ---
 
-## 📸 Screenshots
-
-_Coming soon: GIF previews of builder interface and export flow_
-
----
 
 ## 🤝 Contributing
 
