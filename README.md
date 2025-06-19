@@ -32,6 +32,12 @@ view-craft/
 - Supports Databutton SDK, FastAPI, and cloud integrations
 
 ---
+## 🌐 Live Demo
+
+🎉 The frontend of this project is live and deployed on **Netlify**!  
+👉 [Click here to view the live site](https://productviewbynirlep.netlify.app/)
+
+This deployment allows users to experience the core features of the ViewCraft platform directly in the browser, with a fast, responsive interface built using React and Vite.
 
 ## 🛠️ Tech Stack
 
@@ -70,9 +76,6 @@ python main.py  # Or uvicorn main:app --reload if using FastAPI
 ```
 
 Runs on: [http://localhost:8000/docs](http://localhost:8000/docs) (Swagger UI)
-
----
-
 
 ## 🤝 Contributing
 
