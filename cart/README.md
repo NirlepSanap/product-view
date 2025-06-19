@@ -1,29 +1,92 @@
-# Databutton app
 
-This project consists of a FastAPI backend server and a React + TypeScript frontend application exported from Databutton.
+# 🧩 ViewCraft - Full Stack Web Builder
 
-## Stack
+ViewCraft is a powerful full stack web builder that allows users to visually create, edit, and export web pages. It supports dynamic drag-and-drop components on the frontend and a Python-based backend for user management, storage, and processing.
 
-- React+Typescript frontend with `yarn` as package manager.
-- Python FastAPI server with `uv` as package manager.
+---
 
-## Quickstart
+## 📁 Project Structure
 
-1. Install dependencies:
-
-```bash
-make
+```
+view-craft/
+├── cart/
+│   ├── frontend/   # React + Vite + GrapesJS (Drag & Drop Builder)
+│   └── backend/    # Python Backend (FastAPI or Flask)
 ```
 
-2. Start the backend and frontend servers in separate terminals:
+---
 
+## 🚀 Features
+
+### 🌐 Frontend (React + Vite)
+- Drag-and-drop web page builder (GrapesJS)
+- Real-time component editing
+- Responsive preview modes
+- Custom block plugins
+- Firebase or Stripe integrations (optional)
+
+### 🔧 Backend (Python)
+- User authentication and session handling
+- API endpoints to store/retrieve designs
+- File export/download (e.g., HTML/CSS)
+- Supports Databutton SDK, FastAPI, and cloud integrations
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Tech                            |
+|-------------|---------------------------------|
+| Frontend    | React, Vite, GrapesJS           |
+| Backend     | Python (FastAPI or Flask)       |
+| Package Mgmt| Yarn 4 (via Corepack), pip      |
+| Optional    | Firebase, Stripe, Databutton    |
+
+---
+
+## ⚙️ Setup Instructions
+
+### 📦 Frontend (React)
 ```bash
-make run-backend
-make run-frontend
+cd cart/frontend
+corepack enable
+yarn install
+yarn dev
 ```
 
-## Gotchas
+Runs on: [http://localhost:5173](http://localhost:5173)
 
-The backend server runs on port 8000 and the frontend development server runs on port 5173. The frontend Vite server proxies API requests to the backend on port 8000.
+---
 
-Visit <http://localhost:5173> to view the application.
+### 🐍 Backend (Python)
+#### 🔁 Option 1: Using Python 3.11
+```bash
+cd cart/backend
+python -m venv venv
+venv\Scripts\activate  # On Windows
+# Or source venv/bin/activate on Mac/Linux
+pip install -r requirements.txt
+python main.py  # Or uvicorn main:app --reload if using FastAPI
+```
+
+Runs on: [http://localhost:8000/docs](http://localhost:8000/docs) (Swagger UI)
+
+---
+
+## 📸 Screenshots
+
+_Coming soon: GIF previews of builder interface and export flow_
+
+---
+
+## 🤝 Contributing
+
+Pull requests and issues are welcome.
+
+If you'd like to collaborate on templates, plugins, or backend APIs — feel free to fork and contribute.
+
+---
+
+## 📃 License
+
+MIT License © 2025 [Nirlep Sanap](https://github.com/nirlepsanap)
